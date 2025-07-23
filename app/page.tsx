@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import garden from "@/public/images/garden.jpg";
 import { getServerSession } from "next-auth";
-import { AuthOptions } from "./api/auth/[...nextauth]/route";
+import { AuthOptions } from "./api/auth/[...nextauth]/authOptions";
 
 export default async function Home() {
   const session = await getServerSession(AuthOptions);
